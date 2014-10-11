@@ -1,0 +1,71 @@
+NAME
+    SHARYANTO::Text::Prompt - Prompt user question
+
+VERSION
+    This document describes version 0.76 of SHARYANTO::Text::Prompt (from
+    Perl distribution SHARYANTO-Text-Prompt), released on 2014-10-11.
+
+FUNCTIONS
+  prompt($text, \%opts) => val
+    Display $text and ask value from STDIN. Will re-ask if value is not
+    valid. Return the chomp-ed value.
+
+    Options:
+
+    *   var => \$var
+
+    *   required => bool
+
+        If set to true then will require that value is not empty
+        (zero-length).
+
+    *   default => VALUE
+
+        Set default value.
+
+    *   regex => REGEX
+
+        Validate using regex.
+
+  confirm($text, \%opts) => bool
+    Display $text and ask for yes or no. Will return bool.
+
+    Options:
+
+    *   default => bool
+
+        Set default value.
+
+TODO
+    Option to stty off (e.g. when prompting password).
+
+    Localize confirm().
+
+SEE ALSO
+    SHARYANTO
+
+HOMEPAGE
+    Please visit the project's homepage at
+    <https://metacpan.org/release/SHARYANTO-Text-Prompt>.
+
+SOURCE
+    Source repository is at
+    <https://github.com/perlancar/perl-SHARYANTO-Text-Prompt>.
+
+BUGS
+    Please report any bugs or feature requests on the bugtracker website
+    <https://rt.cpan.org/Public/Dist/Display.html?Name=SHARYANTO-Text-Prompt
+    >
+
+    When submitting a bug or request, please include a test-file or a patch
+    to an existing test-file that illustrates the bug or desired feature.
+
+AUTHOR
+    perlancar <perlancar@cpan.org>
+
+COPYRIGHT AND LICENSE
+    This software is copyright (c) 2014 by perlancar@cpan.org.
+
+    This is free software; you can redistribute it and/or modify it under
+    the same terms as the Perl 5 programming language system itself.
+
